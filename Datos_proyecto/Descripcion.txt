@@ -1,1 +1,75 @@
+Espectros de Emisión de radiación X de la fuente de Tungsteno Hamamatsu.
 
+Se sacan 5 espectros por cada valor de voltaje de polarización del tubo X-Ray. Los valores de voltaje van de 11kV hasta 50kV, en pasos de 3kV.
+
+
+GEOMETRIA:
+----------
+Se ubica el sensor lo más cerca a la fuente X-Ray, tal que el flujo de fotones sea el máximo posible, antes de que se observe el colimador en la imagen. Esto se obtuvo, poniendo la salida de los X-Rays de la fuente de Ag, a 21.75cm desde el punto de emisión de X-Rays de la fuente W. El sensor se ubica a 40cm de la salida de la fuente X-Ray de Ag.
+
+
+CONDICIONES FUENTE:
+-------------------
+Marca: Hamamatsu, Amptek
+Modelo: L10321, Mini-X
+Anodo: W, Ag
+Ventana: Berilio
+Voltaje Fuente: de 11kV hasta 47kV. Ver abajo.
+Corriente Fuente: 150uA, excepto 1 dato de fuente Ag.
+Colimador, Fuente W: Dout = 2.5mm, Largo = 3.2cm
+Colimador, Fuente Ag: Dout = mm, Largo = mm.
+Filtro: N/A.
+
+
+CONFIG SENSOR:
+--------------
+Tipo: MPX3RXV1, fine pitch (55um pixel pitch).
+Modo de Operación: SPM
+Preamp Gain: High Gain Mode.
+No. serie: W108_I4.
+Polaridad del sensor: N-on-P.
+Vsensor: -100V
+
+
+TIEMPOS DE EXPOSICION:
+----------------------
+Se saca una imagen inicial al valor del voltaje más bajo, que corresponde a su vez al momento en que la fuente emite la menor cantidad de fotones. Se desea que esta toma y todas las demás tengan buena estadística, por lo que se desea que se obtengan espectros tales que el conteo promedio por imagen sea de 500 o más. Se sacan 5 espectros por valor de Vp de la fuente.
+
+Para la fuente de W, el tiempo por valor de TH es de 2.5 segundos.
+
+Para la fuente de Ag, el tiempo por valor de TH es, en general, 10 segundos, salvo para los mayores voltajes, por encima de 23kV, en los que la fuente no provee 150uA.
+
+Para hacer el ajuste, se calcula el tiempo necesario para emitir 375uAs totales, igual que en todos los casos anteriores con ambas fuentes:
+
+@47kV --> I = 084uA. Texp = 17.857s/TH
+@41kV --> I = 096uA. Texp = 15.625s/TH
+@35kV --> I = 113uA. Texp = 13.274s/TH
+@29kV --> I = 136uA. Texp = 11.029s/TH
+@23kV --> I = 150uA. Texp = 10s/TH
+@17kV --> I = 150uA. Texp = 10s/TH
+@11kV --> I = 150uA. Texp = 10s/TH
+
+
+
+UMBRALES DE ENERGÍA:
+--------------------
+TH0 = 20 - 250 (Low Threshold, para barrer todos los espectros)
+TH1 = 200 (High Threshold - ignorado).
+
+**Es necesario convertir estos valores a energía, por medio de calibración con fluorescencia de materiales.
+
+
+TOMAS REALIZADAS:
+-----------------
+
+MAT	W	Ag
+--------------------------
+Vp[kV]
+
+1. 11 5/5	5/5
+2. 17 5/5	5/5
+3. 23 5/5	0/5
+4. 29 5/5	0/5
+5. 35 5/5	0/5
+6. 41 5/5	0/5
+7. 47 5/5	0/5
