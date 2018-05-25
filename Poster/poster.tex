@@ -12,7 +12,6 @@
 \newtheorem{Def}{Definition}
 
 
-
 \title{Caracterización de espectros de rayos X asociados a fuentes de tungsteno y plata usando un detector MEDIPIX3}
 %Título do projeto
 
@@ -136,7 +135,7 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width = 0.7\linewidth]{Figuras/Ag_Ima.png}
+		\includegraphics[width = \linewidth]{Figuras/Ag_Ima.png}
 	\end{figure}
 
 \section{Resultados y discusión}
@@ -148,20 +147,21 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width = \linewidth]{Figuras/CalibracionE.pdf}
+		\includegraphics[width = 0.9\linewidth]{Figuras/CalibracionE.pdf}
 	\end{figure}
 
-	El número máximo de conteos escala con el voltaje del tubo.
-	
-	Cuando aumentan los voltajes aparecen más picos en el espectro.
+	El número máximo de conteos escala con el voltaje del tubo. Cuando aumentan los voltajes aparecen más picos en el espectro.
 	
 	\begin{figure}[h]
 		\centering
-		\begin{tabular}{cc}
-				\includegraphics[width = 0.52\linewidth]{Figuras/Max_voltage.pdf}
-				&
-				\includegraphics[width = 0.52\linewidth]{Figuras/Both_Normed.pdf}
-		\end{tabular}
+		\includegraphics[width = 0.9\linewidth]{Figuras/Max_voltage.pdf}
+		
+		\includegraphics[width = 0.9\linewidth]{Figuras/Both_Normed.pdf}
+%		\begin{tabular}{cc}
+%				
+%				&
+%				
+%		\end{tabular}
 	\end{figure}
 	
 	La relación señal a ruido es baja a voltajes bajos (conteos de fuentes externas) y a voltajes altos (variaciones en las emisiones de la fuente).
@@ -169,21 +169,22 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\begin{table}[h]
 		\centering
-		\begin{tabular}{cc}
-			\includegraphics[width = 0.52\linewidth]{Figuras/wsnr.pdf}
-			&
-			\includegraphics[width = 0.52\linewidth]{Figuras/agsnr.pdf}
-		\end{tabular}
+		\includegraphics[width = \linewidth]{Figuras/wsnr.pdf}
+		\includegraphics[width = \linewidth]{Figuras/agsnr.pdf}
+%		\begin{tabular}{cc}
+%			&
+%			
+%		\end{tabular}
 	\end{table}
 	
-	El contraste de las imágenes es más alto con la fuente de ánodo de plata.
-	
-	La fuente de ánodo de plata tiende a producir fotones más energéticos.
+	El contraste de las imágenes es más alto con la fuente de ánodo de plata. La fuente de ánodo de plata tiende a producir fotones más energéticos.
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width = \linewidth]{Figuras/Images.png}
 	\end{figure}
+	
+	El contraste fue medido usando un algoritmo que toma el promedio de los valores dentro de un contorno, y el área exterior del mismo.
 	
 	\begin{figure}[h]
 		\centering
@@ -192,22 +193,26 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width = \linewidth]{Figuras/Contraste.png}
+		\includegraphics[width = 0.9\linewidth]{Figuras/Contraste.png}
 	\end{figure}
 
 \section{Conclusiones}
 
-\begin{itemize}
-	\item La función de relación de señal a ruido no es una función suave de la energía.
-	\item La fuente de ánodo de plata es más eficiente a bajas energías.
-	\item La fuente de ánodo de tungsteno es más eficiente a altas energías.
-	\item El espectro observado mantiene su forma al superar ciertos valores de voltaje (23 kV en este caso).
-\end{itemize}
+	\begin{itemize}
+%		\small
+		\item La función de relación de señal a ruido no es una función suave de la energía.
+		\item La fuente de ánodo de plata es más eficiente a bajas energías.
+		\item La fuente de ánodo de tungsteno es más eficiente a altas energías.
+		\item El espectro observado mantiene su forma al superar ciertos valores de voltaje (23 kV en este caso).
+	\end{itemize}
 %	 En general, se observó que la función de la relación de señal a ruido no es una función suave en la energía. Esto se debe en gran medida a los picos de emisión en los espectros de energía de los tubos de rayos X. Además se pueden concluir dos cosas, para voltajes de aceleración inferiores a 17 kV, la fuente de ánodo de plata es más brillante que la de tungsteno, este resultado posteriormente se invierte. Por otro lado la pendiente muestra que la fuente de tungsteno es tiene mayor eficiencia lumínica, dado que por cada voltio aplicado los conteos aumentan más del doble respecto a la fuente de plata.
 %	 
 %	 La morfología se mantiene constante para valores iguales o superiores a 23 kV, en ambas fuentes. Respecto a los errores experimentales se muestra que la incertidumbre para la fuente de tungsteno es completamente aleatoria, mientras que para el caso de la fuente de plata se tiene un error sistemático en las medidas.
-	
-\nocite{als2011elements,amtek,ballabriga2011medipix3,exper,koningsberger1988x,manualT,mendenhall2017high,mini,param,range,van2014scikit,xps}
+%\nocite{als2011elements,amtek,ballabriga2011medipix3,exper,koningsberger1988x,manualT,mendenhall2017high,mini,param,range,van2014scikit,xps}
+
+\nocite{als2011elements,ballabriga2011medipix3, van2014scikit}
+
+%\bibliographystyle{apsrev4-1}
 \bibliographystyle{unsrt}
 \small
 \bibliography{bib}
