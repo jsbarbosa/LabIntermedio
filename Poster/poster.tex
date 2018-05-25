@@ -1,5 +1,4 @@
 \documentclass{sciposter}
-\usepackage{lipsum}
 \usepackage{epsfig}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -113,6 +112,7 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	\end{table}
 	
 	\subsubsection{Barridos de voltaje y calibración de energía:}
+	Se manufacturó una base móvil para la fuente de ánodo de plata.
 	Se realizaron barridos de voltaje de 11 kV a 47 kV en pasos de 6 kV para las dos fuentes sin muestras. 
 	
 	\begin{figure}[h]
@@ -132,6 +132,7 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\subsubsection{Toma de imágenes:}
 	Muestra de acrílico con incrustaciones de calcita en el camino de los rayos X.
+	Se toman todas las imágenes con la misma corriente de tubo.
 	
 	\begin{figure}[h]
 		\centering
@@ -147,7 +148,7 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width = 0.7\linewidth]{Figuras/CalibracionE.pdf}
+		\includegraphics[width = \linewidth]{Figuras/CalibracionE.pdf}
 	\end{figure}
 
 	El número máximo de conteos escala con el voltaje del tubo.
@@ -164,6 +165,7 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	\end{figure}
 	
 	La relación señal a ruido es baja a voltajes bajos (conteos de fuentes externas) y a voltajes altos (variaciones en las emisiones de la fuente).
+	La relación de señal a ruido es más alta para el tungsteno, dada su mayor potencia de emisión.
 	
 	\begin{table}[h]
 		\centering
@@ -190,7 +192,7 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width = 0.7\linewidth]{Figuras/Contraste.png}
+		\includegraphics[width = \linewidth]{Figuras/Contraste.png}
 	\end{figure}
 
 \section{Conclusiones}
@@ -204,7 +206,8 @@ Cra 1 N$^\circ$ 18A - 12 Bogotá, Colombia}
 %	 En general, se observó que la función de la relación de señal a ruido no es una función suave en la energía. Esto se debe en gran medida a los picos de emisión en los espectros de energía de los tubos de rayos X. Además se pueden concluir dos cosas, para voltajes de aceleración inferiores a 17 kV, la fuente de ánodo de plata es más brillante que la de tungsteno, este resultado posteriormente se invierte. Por otro lado la pendiente muestra que la fuente de tungsteno es tiene mayor eficiencia lumínica, dado que por cada voltio aplicado los conteos aumentan más del doble respecto a la fuente de plata.
 %	 
 %	 La morfología se mantiene constante para valores iguales o superiores a 23 kV, en ambas fuentes. Respecto a los errores experimentales se muestra que la incertidumbre para la fuente de tungsteno es completamente aleatoria, mientras que para el caso de la fuente de plata se tiene un error sistemático en las medidas.
-	 
+	
+\nocite{als2011elements,amtek,ballabriga2011medipix3,exper,koningsberger1988x,manualT,mendenhall2017high,mini,param,range,van2014scikit,xps}
 \bibliographystyle{unsrt}
 \small
 \bibliography{bib}
